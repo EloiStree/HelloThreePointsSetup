@@ -1,62 +1,50 @@
-# HelloThreePointsSetup
-Learn about how to use the project Three Points that allows to measure, load and calibrate room in Unity3D with Quest3
 
+# HelloThreePointsSetup  
+Learn how to use the *Three Points* project, which enables measuring, loading, and calibrating rooms in Unity3D using the Quest 3.  
 
+## How to Load a Level  
 
+### Using Three Exact Mesh Points  
 
-## Load a level ?
+#### Setup:  
+1. Scan the room using the *Three Points* building tool (or another method).  
+2. Place a *Three Points* tag at the exact mesh positions using vertex snapping ('V').  
+3. Attach the `transform3` script to these points.  
+4. Add the `movable` script, linking it with `transform3` and the scene that will move accordingly.  
 
-## From Three exact mesh points
+#### Loading:  
+- Whenever a triangle with these exact measurements is detected in the register, the corresponding level will be loaded or repositioned.  
 
-Setup:
-- Scan a room with three point building tool (or else)
-- Put a Three Points tag at the exact mesh point positions (using snapping 'v')
-- And the script 'transform3'
-- Add the script 'movable' with the transform3 and the scene to move with it.
+### Using Ground Markers  
 
-Loading:
-- Every time you submit a triangle with this exact measure, if in the register, the level will be moved (or loaded) 
+#### Setup:  
+- Place stickers on the ground forming a rectangle-triangle (e.g., 5m x 1m).  
 
-### From mark on the ground
+#### Loading:  
+- Add and submit the three marked points on the ground.  
 
-Setup:
-- You just put some sticker on the ground like 5x1 meter rect triangle
-Loading:
-- You Add and submit the three point on the ground.
+### Using a Table  
 
-### From Table
+#### Setup:  
+- Place a table in the scene.  
+- Ensure it has defined **height, depth, and width** (depth and width are mandatory).  
 
-Setup:
-- Put a table in your scene
-- It must have a height+ (Depth+ Width)
-  - The Depth and Width is mandatory.  
+#### Loading:  
+- Add and submit three points (right, left, and front-left) to load the table into the scene.  
 
-Loading
-- You add and submit three points right, left, front left to load the table.
-   
+## Loading a Room Using 3D Printed Anchors  
 
+*(Feature not yet implemented)*  
 
-## Load room using 3D Print tag
+You can load a room using triangulation, but you need to remember the three anchor points.  
 
-Not coded Yet.
-![image](https://github.com/user-attachments/assets/2fab89e9-cb40-4b63-8ca4-c9301ca84a47)
+### Calibration Setup:  
+1. Attach three **3D-printed anchors** to the room using double-sided stickers.  
+2. Place the controller into each anchor without moving it.  
+3. A triangulation is generated, enabling level reloading.  
+4. Manually adjust the level to fit the real room as accurately as possible (e.g., using the *Three Points* loader).  
+5. Save the triangulation data along with the level.  
 
-You can load a room using triangulations.
-But you need to remeber what where the three anchor point.
-
-And other way to do it.
-
-Setup calibration:
-- You anchor with double side sticker 3 printed anchors.
-- You fit the controller in the print and don't move it for the three anchors.
-- A triangle is generated that will allows to reload the level.
-- Now take you level and by "hand" make it fit the best you can in the room
-  - For example by using the three points loader.
-- Save the triangulation of the anchor with the level.
-
-Relaod calibration:
-- Put the controller and wait at the three printed anchor.
-- The level should reload automaticaly
-
-
- 
+### Reloading Calibration:  
+- Position the controller at the three printed anchors and wait.  
+- The level should automatically reload.  
