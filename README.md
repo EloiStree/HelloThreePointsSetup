@@ -48,3 +48,17 @@ You can load a room using triangulation, but you need to remember the three anch
 ### Reloading Calibration:  
 - Position the controller at the three printed anchors and wait.  
 - The level should automatically reload.  
+
+
+
+---------------
+
+![image](https://github.com/user-attachments/assets/87e87fe3-7bb5-496f-bedb-4b0cbd17800c)
+![WhatsApp Image 2025-03-30 at 00 10 48_d8d88043](https://github.com/user-attachments/assets/dca66626-52dd-4148-81ae-87babfb2f68f)
+![WhatsApp Image 2025-03-30 at 00 11 17_3130ef24](https://github.com/user-attachments/assets/b5f45435-3958-45fc-8dc5-61e2d4a450a4)
+![WhatsApp Image 2025-03-30 at 00 10 22_61d7161a](https://github.com/user-attachments/assets/d719f472-646f-4c20-9fcb-151cd856c4c5)
+![image](https://github.com/user-attachments/assets/7d29c735-92af-4304-8c34-c47b6b921d0b)
+
+
+[![image](https://github.com/user-attachments/assets/bba2c745-4325-416f-9c79-d140d16f4d04)](https://youtu.be/0k1kqoNi4UM)
+https://youtu.be/0k1kqoNi4UM
